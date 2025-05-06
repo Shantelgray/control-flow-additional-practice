@@ -1,29 +1,87 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 0,
-    "passes": 0,
+    "suites": 3,
+    "tests": 4,
+    "passes": 4,
     "pending": 0,
     "failures": 1,
-    "start": "2025-05-06T14:59:47.529Z",
-    "end": "2025-05-06T14:59:47.781Z",
-    "duration": 252
+    "start": "2025-05-06T18:32:58.974Z",
+    "end": "2025-05-06T18:32:59.085Z",
+    "duration": 111
   },
-  "tests": [],
-  "pending": [],
-  "failures": [
+  "tests": [
     {
       "title": "returns \"No fine!\" when daysLate is 0 or negative",
       "fullTitle": "index.js lateFee() returns \"No fine!\" when daysLate is 0 or negative",
       "duration": 0,
       "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges $1 per day for up to 7 days late",
+      "fullTitle": "index.js lateFee() charges $1 per day for up to 7 days late",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges $2 per day for 8–30 days late",
+      "fullTitle": "index.js lateFee() charges $2 per day for 8–30 days late",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "suspends membership after more than 30 days late",
+      "fullTitle": "index.js lateFee() suspends membership after more than 30 days late",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "returns extended hours for Central branch",
+      "fullTitle": "index.js branchHours() returns extended hours for Central branch",
+      "duration": 0,
+      "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'No fine!'",
+        "message": "expected undefined to equal 'Open until 9pm.'",
         "showDiff": true,
-        "expected": "No fine!",
-        "stack": "AssertionError: expected undefined to equal 'No fine!'\n    at Context.<anonymous> (test/indexTest.js:7:29)\n    at process.processImmediate (node:internal/timers:478:21)"
+        "expected": "Open until 9pm.",
+        "stack": "AssertionError: expected undefined to equal 'Open until 9pm.'\n    at Context.<anonymous> (test/indexTest.js:26:41)\n    at process.processImmediate (node:internal/timers:478:21)"
       }
     }
   ],
-  "passes": []
+  "passes": [
+    {
+      "title": "returns \"No fine!\" when daysLate is 0 or negative",
+      "fullTitle": "index.js lateFee() returns \"No fine!\" when daysLate is 0 or negative",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges $1 per day for up to 7 days late",
+      "fullTitle": "index.js lateFee() charges $1 per day for up to 7 days late",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges $2 per day for 8–30 days late",
+      "fullTitle": "index.js lateFee() charges $2 per day for 8–30 days late",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "suspends membership after more than 30 days late",
+      "fullTitle": "index.js lateFee() suspends membership after more than 30 days late",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
 }
